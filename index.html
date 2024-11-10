@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model Prediction - Predictive Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Predictive Maintenance Using Machine Learning</h1>
+        <div class="container2">
+            <p>Please enter the following data:</p>
+            <form id="ml-form">
+                <label for="input1">Input 1:</label>
+                <input type="text" id="input1" name="input1" required>
+
+                <label for="input2">Input 2:</label>
+                <input type="text" id="input2" name="input2" required>
+
+                <label for="input3">Input 3:</label>
+                <input type="text" id="input3" name="input3" required>
+
+                <label for="input4">Input 4:</label>
+                <input type="text" id="input4" name="input4" required>
+
+                <label for="input5">Input 5:</label>
+                <input type="text" id="input5" name="input5" required>
+
+                <label for="input6">Input 6:</label>
+                <input type="text" id="input6" name="input6" required>
+
+                <label for="input7">Input 7:</label>
+                <input type="text" id="input7" name="input7" required>
+
+                <label for="input8">Input 8:</label>
+                <input type="text" id="input8" name="input8" required>
+
+                <label for="input9">Input 9:</label>
+                <input type="text" id="input9" name="input9" required>
+
+                <label for="input10">Input 10:</label>
+                <input type="text" id="input10" name="input10" required>
+
+                <label for="input11">Input 11:</label>
+                <input type="text" id="input11" name="input11" required>
+
+                <label for="input12">Input 12:</label>
+                <input type="text" id="input12" name="input12" required>
+
+                <label for="input13">Input 13:</label>
+                <input type="text" id="input13" name="input13" required>
+
+                <label for="input14">Input 14:</label>
+                <input type="text" id="input14" name="input14" required>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+
+        <!-- Result Section -->
+            <div id="result" style="display: none;">
+                <h2>Predicted Output:</h2>
+                <div id="output"></div>
+                <div id="plot-container">
+                    <img id="result-image" src="" alt="Result Image" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #6a5acd; /* Updated to a more vibrant color */
+  --primary-color-dark: #4b3f91; /* Darker shade for hover */
+  --secondary-color: #ca8a04;
+  --text-dark: #333333; /* Darker text for better contrast */
+  --text-light: #6b7280;
+  --extra-light: #f9f9f9; /* Softer light background */
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+/* Reset and Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--extra-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: left;
+  width: 100%;
+  /* margin-bottom: 0.5rem; */
+}
+
+input[type="text"] {
+  padding: 0.8rem 1.2rem;
+  width: 80%;
+  max-width: 400px;
+  /* margin: 0.5rem 0; */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  color: var(--text-dark);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+  outline: none;
+}
+
+input[type="text"]:hover {
+  border-color: var(--primary-color-dark);
+}
+
+.submit-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  width: 50%;
+  max-width: 250px;
+  margin-top: 2rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.submit-btn:active {
+  background-color: var(--primary-color-dark);
+  transform: scale(0.98);
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+/* Result Section */
+#result {
+  display: none;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#result h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+#output {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+#plot-container {
+  height: 300px;
+  /* background-color: #f4f4f4; */
+  border-radius: 8px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbb;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    max-width: none;
+  }
+
+  .submit-btn {
+    width: 70%;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .submit-btn {
+    width: 80%;
+  }
+
+  #plot-container {
+    height: 250px;
+  }
+}
